@@ -38,41 +38,6 @@ font-family: 'Ubuntu', sans-serif; */
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* .dropping-texts {
-  display: inline-block;
-  width: 180px;
-  text-align: left;
-  height: 25px;
-  vertical-align: -2px;
-  font-size: 20px;
-  font-weight: bold;
-} */
-
-/* .dropping-texts>div {
-  font-size: 0px;
-  opacity: 0;
-  margin-left: -30px;
-  position: absolute;
-  font-weight: 500;
-  box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5);
-} */
-
-/* .dropping-texts>div:nth-child(1) {
-  animation: roll 3s linear infinite 0s;
-}
-
-.dropping-texts>div:nth-child(2) {
-  animation: roll 3s linear infinite 1s;
-}
-
-.dropping-texts>div:nth-child(3) {
-  animation: roll 3s linear infinite 2s;
-}
-
-.dropping-texts>div:nth-child(4) {
-  animation: roll 3s linear infinite 3s;
-} */
-
 span {
   color: crimson;
 }
@@ -86,10 +51,11 @@ span {
   font-size: 25px;
   font-family: 'Radio Canada', sans-serif;
 }
-
+.text31 div{
+  color: crimson;
+}
 .text3 span {
   color: crimson;
-  word-break: break-all;
 }
 
 .logo strong span {
@@ -123,13 +89,12 @@ span {
 
 .img img {
   height: 80vh;
-  border-bottom-right-radius: 500px;
-  border-bottom-left-radius: 500px;
 }
 
 .navbar {
   display: flex;
   width: 100%;
+  position: fixed;
   height: 70px;
   align-items: center;
   justify-content: space-between;
@@ -209,7 +174,7 @@ span {
 .sercard{
   width: 300px;
   height: 200px;
-  background-color: #0c0c11;
+  background-color: #2727df;
   margin-left: 20px;
   margin-top: 20px;
   border-radius: 10px;
@@ -261,13 +226,19 @@ span {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #0c0c11;
+  background-color: #232329;
   color: white;
   border-radius: 12px;
   transition: ease-in-out 0.7s;
 }
 .team_card:hover{
   background-color: crimson;
+  /* position: fixed; */
+  height: 252px;
+  width: 302px;
+}
+.team_card:hover i{
+  color: white;
 }
 .team_mem{
   display: flex;
@@ -283,10 +254,16 @@ span {
 }
 .team_m_name{
   text-align: center;
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 21px;
+
 }
 .team_m_about{
-  text-align: justify;
+  text-align: center;
   padding: 20px;
+  padding-top: 0;
+  font-family: 'Ubuntu', sans-serif; 
+
 }
 .aboutimg{
   width: 250px;
@@ -322,48 +299,55 @@ span {
 .html{
   background-color: #0c0c11;
   width: 40%;
-  height: 4px;
+  height: 15px;
   cursor: pointer;
+}
+.img{
+  width: 50%;
+  margin-top: 40px;
+}
+.intro{
+  width: 40%;
 }
 .progress_html{
   width: 90%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .progress_css{
   width: 70%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .progress_js{
   width: 80%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .progress_cpp{
   width: 90%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .progress_python{
   width: 80%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .progress_django{
   width: 60%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .progress_php{
   width: 80%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .progress_jquery{
   width: 80%;
-  background-color: blue;
-  height: 4px;
+  background-color: crimson;
+  height: 15px;
 }
 .contact{
   width: 100%;
@@ -406,6 +390,17 @@ span {
 .input_box input:focus, input:valid{
   border-bottom: 2px solid crimson;
 }
+
+.team_m_img{
+  margin-top: 8px;
+}
+.team_m_img i{
+  font-size: 35px;
+  color: crimson;
+  transition: ease-in-out 0.7s;
+}
+
+
 @media(max-width: 900px) {
   .menu {
     display: none;
@@ -475,7 +470,18 @@ span {
   .intro div{
     margin: 10px;
   }
-  
+  .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media(max-width: 700px){
   .abouttext{
